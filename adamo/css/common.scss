@@ -547,6 +547,9 @@ $color-title: #4A4A4A;
 .h3-title {
 	font-weight: 600;
 		@media screen and (min-width: $break-small){
+			font-size: 24px;
+		}
+		@media screen and (min-width: $break-tablet){
 			font-size: 32px;
 		}
 		@media screen and (min-width: $break-large){
@@ -560,5 +563,54 @@ $color-title: #4A4A4A;
 	}
 	@media screen and (min-width: $break-large){
 		font-size: 16px;
+	}
+}
+.btn-more-all {
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	background: #4A90E2;
+	padding: 10px 25px;
+	border-radius: 25px;
+	margin-top: 40px;
+}
+p.content-top {
+		font-family: $font-title;
+		line-height: 1.5;
+		color:#4A4A4A;
+		margin-bottom: 0;
+		@media screen and (min-width: $break-small){
+			font-size: 18px;
+		}
+		@media screen and (min-width: $break-tablet){
+			font-size: 20px;
+		}
+
+		@media screen and (min-width: $break-large){
+			font-size: 28px;
+		}
+}
+.item-help {
+	margin-bottom: 40px;
+	object-fit: cover;
+	img {
+		@media (min-width: $break-tablet) {
+			width: 10%;
+		}
+		@media (max-width: $max-tablet) {
+			width: 18%;
+		}
+	}
+}
+h5.title-small {
+	font-family: $font-title;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 1.4;
+	color: #4A4A4A;
+	@media (max-width: $break-medium) {
+
+		font-size: 18px;
 	}
 }
