@@ -2419,6 +2419,7 @@ footer{
 .dedicated-dev {
 	padding: 70px 0;
 	.dedicated-team {
+		margin-top: 90px;
 		.dedicated-team-title {
 			color: $color-white;
 			font-family: Exo-SemiBold;
@@ -2438,12 +2439,16 @@ footer{
 		}
 		.dedicated-team-section {
 			.section-row {
-				display: flex;
-				justify-content: space-between;
-				align-items: stretch;
+				margin-top: 35px;
+				@media (max-width: $max-tablet) {
+					flex-direction: column;
+				}
+					display: flex;
+					justify-content: space-between;
+					align-items: stretch;
+					flex-direction: row;
 				.items {
 					flex: 1;
-					background: $color-white;
 					border-radius: 8px;
 					h3.item-cap {
 						font-size: 24px;
@@ -2451,15 +2456,38 @@ footer{
 						text-align: center;
 						color: $color-white;
 						font-family: Exo-SemiBold;
+						@media (max-width: 797.98px) {
+							display: none;
+						}
 					}
-					.item-icon {
-						display: block;
-						padding: 24px;
-						margin: auto;
-						object-fit: cover;
+					.items-item {
+						background: $color-white;
+						height: 215px;
+						border-radius: 10px;
+						.item-icon {
+							display: block;
+							padding: 24px;
+							margin: auto;
+							object-fit: cover;
+							text-align: center;
+							img {
+								width: 25%;
+							}
+						}
+					}
+					.item-cap-res {
+						@media (min-width: $break-tablet) {
+							display: none;
+						}
+						color: $color-white;
 						text-align: center;
-						img {
-							width: 25%;
+						margin: 20px 0;
+						h3 {
+
+						}
+						i.fa-exchange {
+							transform: rotateZ(90deg);
+							font-size: 30px;
 						}
 					}
 					.item-title {
@@ -2472,6 +2500,9 @@ footer{
 					}
 				}
 				.step {
+					@media (max-width: 767.98px) {
+						order: -1;
+					}
 					position: relative;
 					flex: 2;
 					align-self: center;
