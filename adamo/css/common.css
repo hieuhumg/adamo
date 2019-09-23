@@ -434,17 +434,20 @@ a:hover {
 .title-color {
   color: #4A4A4A; }
 
+.p-top {
+  margin-top: 70px; }
+
 .h3-title {
   font-weight: 600; }
   @media screen and (min-width: 320px) {
     .h3-title {
-      font-size: 24px; } }
+      font-size: 23px; } }
   @media screen and (min-width: 768px) {
     .h3-title {
-      font-size: 32px; } }
+      font-size: 30px; } }
   @media screen and (min-width: 1200px) {
     .h3-title {
-      font-size: 56px; } }
+      font-size: 45px; } }
 
 .p-content {
   color: #4A4A4A; }
@@ -478,7 +481,7 @@ p.content-top {
       font-size: 20px; } }
   @media screen and (min-width: 1200px) {
     p.content-top {
-      font-size: 28px; } }
+      font-size: 24px; } }
 
 .item-help {
   margin-bottom: 40px;
